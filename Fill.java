@@ -1,3 +1,4 @@
+//Using the 4-way Boundary Fill algorithm to fill color in a 2D polygon
 import java.io.*;
 import java.awt.*;
 import java.awt.image.*;
@@ -46,7 +47,7 @@ public class Fill extends Applet{
         		}else{
         			x += xc;
         			y += yc;
-        		}
+			}
         		raster.setPixel((int) Math.round(x), (int) Math.round(y), array);
         	}
         }
